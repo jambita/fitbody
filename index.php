@@ -4,15 +4,7 @@
 	include_once("include/constant.php");
 	
 	$title = "Home Page";  
-        
-        
-      
-        s
 ?>
-
-NEWEST UPDATE IS HERE
-
-
 
 <!DOCTYPE html>
 <html lang="en">

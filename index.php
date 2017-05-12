@@ -1,5 +1,5 @@
 <?php
-	require_once("config.php");
+        require_once("config.php");
 	require_once("connect.php");
 	include_once("include/constant.php");
 	
@@ -9,21 +9,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title><?php echo $title . " - " .$sitename; ?></title>
-	<!-- Responsive -->
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta charset="UTF-8">
+    <title><?php echo $title . " - " .$sitename; ?></title>
+    <!-- Responsive -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/responsive.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 
 <header class="header stricky">
-	<div class="container">
-		<div class="logo pull-left">
+    <div class="container">
+        <div class="logo pull-left">
 			<a href="<?php echo $url; ?>">
 				<img src="img/resources/logo.png" alt="Awesome Image"/>
 			</a>
@@ -79,6 +79,9 @@
 								<?php }
 							}
 						?>
+                                                <?php
+                                                    
+                                                ?>
 					</div>
 					
 					<ul class="page-navigation">

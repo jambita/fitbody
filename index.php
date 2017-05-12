@@ -6,9 +6,14 @@
 	$title = "Home Page";  
         
         
-        
+      
         
 ?>
+
+NEWEST UPDATE IS HERE
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>

@@ -38,10 +38,10 @@
 							$category_name = str_replace("-", " ", $category_name);
 							$category_name = ucwords($category_name);
 						?>
-							<li><a href=""><?php echo $category_name;?></a></li>
+							<li><a href="?buy=<?php echo $category_name; ?>"><?php echo $category_name;?></a></li>               
 						<?php }
-					}
-				?>
+					} 
+				?>  
 			</ul>
 		</div>
 		<div class="single-sidebar popular-product">

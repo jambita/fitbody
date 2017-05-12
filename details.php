@@ -52,6 +52,7 @@ require_once("config.php");
 	<section class="blog-page-content latest-news section-padding shop-page single-blog-page single-class-content">
 		<div class="container">
 			<div class="row">
+                                <?php include_once("include/sidebar.php"); ?>
 				<div class="col-md-9 col-sm-12 col-xs-12 pull-left">
 					<div class="single-product-box">
 						<div class="row">
@@ -237,54 +238,9 @@ require_once("config.php");
 							</div>
 						</div>
 					</div>
-					<div class="related-popular-class">
-						<h3 class="main-title">Releted Product</h3>
-						<div class="owl-carousel owl-theme">
-							<div class="item">
-								<div class="single-our-product">
-									<div class="img-box">
-										<img src="img/our-products/1.png" alt="">
-									</div>
-									<h3>Combat Protein Power</h3>
-									<span>$110</span>
-									<a href="#" class="read-more">Add to cart</a>
-								</div>
-							</div>
-							<div class="item">
-								<div class="single-our-product">
-									<div class="img-box">
-										<img src="img/our-products/2.png" alt="">
-									</div>
-									<h3>Combat Protein Power</h3>
-									<span>$110</span>
-									<a href="#" class="read-more">Add to cart</a>
-								</div>
-							</div>
-							<div class="item">
-								<div class="single-our-product">
-									<div class="img-box">
-										<img src="img/our-products/3.png" alt="">
-									</div>
-									<h3>Combat Protein Power</h3>
-									<span>$110</span>
-									<a href="#" class="read-more">Add to cart</a>
-								</div>
-							</div>
-							<div class="item">
-								<div class="single-our-product">
-									<div class="img-box">
-										<img src="img/our-products/4.png" alt="">
-									</div>
-									<h3>Combat Protein Power</h3>
-									<span>$110</span>
-									<a href="#" class="read-more">Add to cart</a>
-								</div>
-							</div>
-						</div>
-					</div>
 				</div>
                             
-				<?php include_once("include/sidebar.php"); ?>
+				
 			</div>
 		</div>
 	</section>	

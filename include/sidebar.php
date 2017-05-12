@@ -29,7 +29,7 @@
 			</div>
 			<ul>
 				<?php  
-					$category_sql = "SELECT category_name FROM category";
+					$category_sql = "SELECT * FROM category";
 					$category_query = mysqli_query($connect, $category_sql);
 
 					if($category_query){
@@ -37,8 +37,9 @@
 							$category_name = $category_row['category_name'];
 							$category_name = str_replace("-", " ", $category_name);
 							$category_name = ucwords($category_name);
+                                                        $category_id = $category_row['category_id'];
 						?>
-							<li><a href="?buy=<?php echo $category_name; ?>"><?php echo $category_name;?></a></li>               
+							<li><a href="?category=<?php echo $category_id; ?>"><?php echo $category_name;?></a></li>               
 						<?php }
 					} 
 				?>  

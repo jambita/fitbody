@@ -1,9 +1,28 @@
 <?php
-        require_once("config.php");
-	require_once("connect.php");
-	include_once("include/constant.php");
+
+    // Tomorrow
+
+    $where = "";
+    if(isset($_GET['supplements']) && !empty(trim($_GET['supplements'])) && is_numeric($_GET['supplements'])){
+        
+        $supplement_id = (int)$_GET['supplements'];
+        $supplement_category = "supplement_id"; // Suplementi
+        $where = "WHERE products.$supplement_category=$supplement_id";
+    }
+    else if(isset($_GET['category']) && !empty(trim($_GET['category'])) && is_numeric($_GET['category'])){
+        
+        $category_id = (int)$_GET['category'];
+        $category_name = "category_id"; // Suplementi
+        $where = "WHERE products.$category_name=$category_id";
+    }
+    
+    $items_sql = "SELECT * FROM products INNER JOIN supplements ON products.supplement_id=supplements.supplements_id INNER JOIN category ON products.category_id=category.category_id $where";
+
+    require_once("config.php");
+    require_once("connect.php");
+    include_once("include/constant.php");
 	
-	$title = "Home Page";  
+    $title = "Home Page";  
 ?>
 
 <!DOCTYPE html>
@@ -61,7 +80,7 @@
 					</div>
 					<div class="row">
 						<?php
-							$items_sql = "SELECT * FROM products ORDER BY products_id DESC LIMIT 9";
+							//$items_sql = "SELECT * FROM products ORDER BY products_id DESC LIMIT 9";
 							$items_result = mysqli_query($connect, $items_sql);
 
 							if($items_result){

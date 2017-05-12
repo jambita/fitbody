@@ -2,6 +2,8 @@
 require_once("config.php");
 	require_once("connect.php");
 	include_once("include/constant.php");
+        
+        $title = "Details";
 ?>
 
 <!DOCTYPE html>
@@ -50,7 +52,7 @@ require_once("config.php");
 	<section class="blog-page-content latest-news section-padding shop-page single-blog-page single-class-content">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-8 col-sm-12 col-xs-12 pull-left">
+				<div class="col-md-9 col-sm-12 col-xs-12 pull-left">
 					<div class="single-product-box">
 						<div class="row">
 							<div class="col-md-6">
@@ -281,126 +283,12 @@ require_once("config.php");
 						</div>
 					</div>
 				</div>
-				<div class="col-md-4 col-sm-12 pull-right">
-					<div class="single-sidebar-wrapper">
-						<div class="single-sidebar search-widget">
-							<form action="#">
-								<input type="text" placeholder="Enter Keyword">
-								<button type="submit"><i class="fa fa-search"></i></button>
-							</form>
-						</div>
-						<div class="single-sidebar popular-product">
-							<div class="sidebar-title">
-								<h3>Populer Prodtuct</h3>
-							</div>
-							<ul>
-								<li class="clearfix">
-									<div class="content-box pull-left">
-										<h3>Grass Trimmer</h3>
-										<ul class="list-inline">
-											<li><span><i class="fa fa-star"></i></span></li>
-											<li><span><i class="fa fa-star"></i></span></li>
-											<li><span><i class="fa fa-star"></i></span></li>
-											<li><span><i class="fa fa-star"></i></span></li>
-											<li><span><i class="fa fa-star-o"></i></span></li>
-										</ul>
-										<span class="price">$37</span>
-									</div>
-									<div class="img-box pull-right">
-										<img src="img/our-products/thumb-1.png" alt="Awesome Image"/>
-									</div>
-								</li>
-								<li class="clearfix">
-									<div class="content-box pull-left">
-										<h3>Grass Trimmer</h3>
-										<ul class="list-inline">
-											<li><span><i class="fa fa-star"></i></span></li>
-											<li><span><i class="fa fa-star"></i></span></li>
-											<li><span><i class="fa fa-star"></i></span></li>
-											<li><span><i class="fa fa-star"></i></span></li>
-											<li><span><i class="fa fa-star-o"></i></span></li>
-										</ul>
-										<span class="price">$37</span>
-									</div>
-									<div class="img-box pull-right">
-										<img src="img/our-products/thumb-2.png" alt="Awesome Image"/>
-									</div>
-								</li>
-								<li class="clearfix">
-									<div class="content-box pull-left">
-										<h3>Grass Trimmer</h3>
-										<ul class="list-inline">
-											<li><span><i class="fa fa-star"></i></span></li>
-											<li><span><i class="fa fa-star"></i></span></li>
-											<li><span><i class="fa fa-star"></i></span></li>
-											<li><span><i class="fa fa-star"></i></span></li>
-											<li><span><i class="fa fa-star-o"></i></span></li>
-										</ul>
-										<span class="price">$37</span>
-									</div>
-									<div class="img-box pull-right">
-										<img src="img/our-products/thumb-3.png" alt="Awesome Image"/>
-									</div>
-								</li>
-							</ul>
-						</div>
-						<div class="single-sidebar categories">
-							<div class="sidebar-title">
-								<h3>Product Catagories</h3>
-							</div>
-							<ul>
-								<li><a href="#">Nutrition</a></li>
-								<li><a href="#">Muscle Gain</a></li>
-								<li><a href="#">Fat Loss</a></li>
-								<li><a href="#">ABS Kins</a></li>
-								<li><a href="#">Protein</a></li>
-							</ul>
-						</div>
-						<div class="single-sidebar call-to-action-box">
-							<h3>Have any Question ?</h3>
-							<h3>Call Us :</h3>
-							<h3><span>(+880) 1723801729</span></h3>
-							<h3>For Details</h3>
-						</div>
-						
-					</div>
-				</div>
+                            
+				<?php include_once("include/sidebar.php"); ?>
 			</div>
 		</div>
 	</section>	
 
-
-	<section class="our-bmi">
-		<div class="container">
-			<div class="section-title">
-				<h2>
-					<span>Know your BMI</span>
-				</h2>				
-			</div>
-			<div class="clearfix">
-				<form action="#" class="clearfix">
-					<div class="form-grp">
-						<select name="gender" class="select-menu">
-							<option value="">Gender</option>
-							<option value="">Male</option>
-							<option value="">Female</option>
-						</select>
-					</div>
-					<div class="form-grp">
-						<input type="text" id="weight" placeholder="Weight In KG">
-					</div>
-					<div class="form-grp">
-						<input type="text" id="height" placeholder="Height In Inch">
-					</div>
-					<div class="form-grp submit">
-						<button type="submit" id="calculate" >calculator</button>
-					</div>					
-					<span>=</span>
-					<span class="result" id="result">00.0</span>
-				</form>
-			</div>
-		</div>
-	</section>
 <?php
 include ('include/footer.php');
 ?>

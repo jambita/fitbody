@@ -55,8 +55,32 @@
 
 	<section class="inner-banner">
 		<div class="container">
-			<div class="title pull-left">
-				<h3>Proizvodi</h3>
+		
+		</div>
+	</section>
+    <section class="call-to-action">
+		<div class="container">
+			<div class="col-md-6">
+				<div class="single-call-to-action left">
+					<div class="title">
+						<h3>Bcaa</h3>
+						<h4>Proširiti svoju snagu</h4>
+					</div>
+					<p>Lorem ipsum dolor sit amet, id nec modo tantas amet <br><b>stet laboramus cu usu</b> qui te ipsum dolor.</p>
+					<a href="#" class="see-more">See Impact</a>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="single-call-to-action right" style="background-image: url(images/banner/211.jpg), url(images/banner/background-shape.png);">
+					<div class="content">
+						<div class="title">
+							<h3>On nutrition</h3>
+							<h4>Protein whey</h4>
+						</div>
+						<p>Lorem ipsum dolor sit amet, id nec modo tantas amet <br><b>stet laboramus cu usu</b> qui te ipsum dolor.</p>
+						<a href="#" class="see-more">Learn more</a>
+					</div>
+				</div>
 			</div>
 		</div>
 	</section>

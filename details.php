@@ -47,7 +47,7 @@ require_once("config.php");
 			</div>
 		</div>
 	</section>
-
+    
 
 	<section class="blog-page-content latest-news section-padding shop-page single-blog-page single-class-content">
 		<div class="container">

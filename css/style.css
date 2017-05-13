@@ -572,10 +572,10 @@ h6 {
 .call-to-action {
   position: relative;
   z-index: 99;
-  margin-top: -80px;
+  margin-top: -50px;
 }
 .call-to-action .container {
-  background: #1d242c url(../img/call-to-action/1.jpg) no-repeat 20% top;
+  background: #1d242c url(../images/banner/banner1.jpg) no-repeat 20% top;
   overflow-y: hidden;
 }
 .call-to-action [class*='col-md'],
@@ -585,7 +585,7 @@ h6 {
 .call-to-action .single-call-to-action {
   background-position: 120% top, left center;
   background-repeat: no-repeat;
-  padding-left: 50px;
+  padding-left: 40px;
   padding-top: 35px;
   padding-bottom: 35px;
 }
@@ -596,7 +596,7 @@ h6 {
   margin: 0;
 }
 .call-to-action .single-call-to-action.left {
-  background: url(../img/call-to-action/overlay-1.png) left center no-repeat;
+  background: url(../images/banner/overlay-1.png) left center no-repeat;
 }
 .call-to-action .single-call-to-action.right {
   padding-left: 120px;
@@ -612,7 +612,7 @@ h6 {
   left: 118px;
   right: 0;
   bottom: 0;
-  background: url(../img/call-to-action/overlay-2.png) left center no-repeat;
+  background: url(../images/banner/overlay-2.png) left center no-repeat;
 }
 .call-to-action .single-call-to-action.right h3,
 .call-to-action .single-call-to-action.right p {
@@ -2347,7 +2347,7 @@ h6 {
    16. Inner Banner  styles
    ============================== */
 .inner-banner {
-  background: #000000 url(../img/resources/inner-banner.jpg) center center no-repeat;
+  background: #000000 url(../images/banner/DumbellRack.png) center center no-repeat;
   background-size: cover;
   padding-top: 190px;
   padding-bottom: 105px;

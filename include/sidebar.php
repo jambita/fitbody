@@ -74,6 +74,9 @@
 			<h3><span><?php echo $phone; ?></span></h3>
 			<h3>Za detalje</h3>
 		</div>
+            
+                <img src="images/banner/sidebaner.jpg"
+		
 		
 	</div>
 </div>
